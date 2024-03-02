@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavender"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter country"
+            android:textSize="26sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/titan_one_regular"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edit_text_background"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COUNTRY"
+            android:fontFamily="@font/titan_one_regular"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/country_editTxt"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/titan_one_regular"
+           />
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/titan_one_regular"/>
+
+
+            <TextView
+                android:id="@+id/descripsionTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Capital Of"
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/titan_one_regular"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/capital_Txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:fontFamily="@font/titan_one_regular"/>
+
+    </LinearLayout>
+
+</FrameLayout>
